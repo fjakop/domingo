@@ -1,4 +1,27 @@
 <?xml version='1.0'?>
+<!--
+  ~ This file is part of Domingo
+  ~ an Open Source Java-API to Lotus Notes/Domino
+  ~ originally hosted at http://domingo.sourceforge.net, now available
+  ~ at https://github.com/fjakop/domingo
+  ~
+  ~ Copyright (c) 2003-2007 Beck et al. projects GmbH Munich, Germany (http://www.bea.de)
+  ~
+  ~ This library is free software; you can redistribute it and/or
+  ~ modify it under the terms of the GNU Lesser General Public
+  ~ License as published by the Free Software Foundation; either
+  ~ version 2.1 of the License, or (at your option) any later version.
+  ~
+  ~ This library is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~ Lesser General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Lesser General Public
+  ~ License along with this library; if not, write to the Free Software
+  ~ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+  -->
+
 <document xmlns='http://www.lotus.com/dxl' version='6.5' maintenanceversion='1.0' replicaid='C1257268004F93E3' form='Memo'>
 <noteinfo noteid='90e' unid='5BCFCFB9B244FC67C12572680051C145' sequence='3'>
 <created><datetime>20070119T155258,93+01</datetime></created>

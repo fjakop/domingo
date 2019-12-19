@@ -1,7 +1,8 @@
 /*
  * This file is part of Domingo
  * an Open Source Java-API to Lotus Notes/Domino
- * hosted at http://domingo.sourceforge.net
+ * originally hosted at http://domingo.sourceforge.net, now available
+ * at https://github.com/fjakop/domingo
  *
  * Copyright (c) 2003-2007 Beck et al. projects GmbH Munich, Germany (http://www.bea.de)
  *
