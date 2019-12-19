@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Domingo Proxy Implementation</title>
+</head>
+<body>
+<p>Proxy implementation of the contract in package <code>de.bea.domingo</code>.</p>
+
+<p><b>Design goals</b><br/>
+A Client should have only one session, shared between all threads.<br/>
+A Server should optionaly have many sessions (one session for each thread)
+for better performance.</p>
+
+<p>A Notes Session could be shared between different threads, but objects
+created with one session should never be used with objects created with
+another session. This must be ensured on application level.</p>
+
+<p>Sessions can be created via Corba or local call.</p>
+
+<p>no recycle needed.</p>
+
+<p><b>Multithreading issues</b><br/>
+(from Notes Design Help)<br/>
+You should avoid multithreading unless you have good reason to use it, such
+as proceeding while file input/output and Web requests are processing.
+Observe the following guidelines:</p>
+<ul>
+<li>Within a session, Domino Objects are shared, synchronized, and recycled
+across threads. Using a different session on each thread loses these
+capabilities; you must explicitly manage synchronization and recycle on a
+per-thread basis.</li>
+<li>Do not use DbDirectory across threads.</li>
+<li>Accessing an existing document on multiple threads is permissible, but
+accessing it on just one thread simplifies memory management. Restricting
+accesses to one thread allows you to recycle without checking the other
+threads. Creating documents across threads is always safe and these objects
+ can be recycled without reference to the other threads.</li>
+<li>Profile documents are cached on a per-thread basis. In the event of an
+update contention, the last thread updating wins.</li>
+<li>Take care not to delete a document needed for navigation by a view or
+collection on another thread.</li>
+<li>When child objects are used on threads other than the parent, keep the
+parent thread alive until all child threads terminate. This is particularly
+important when using Domino Objects in AWT event handlers.</li>
+</ul>
+</body>
+</html>

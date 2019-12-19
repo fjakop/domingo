@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>API of Domingo</title>
+</head>
+<body>
+Interfaces and factory for access to Lotus Notes databases.
+
+<p>You can call the Domino Objects from a Java program by importing the
+de.bea.domingo package. The program can be coded as an application, a Domino
+agent or a servlet. Local calls access run-time code on the local
+computer, which must have Domino installed. CORBA-based remote (IIOP) calls
+access run-time code from a remote Domino server; in this case, the local
+computer need not have Domino installed.</p>
+
+<h3>Usage pattern</h3>
+<pre>
+import de.bea.domingo.DNotesFactory;
+import de.bea.domingo.DSession;
+import de.bea.domingo.DDatabase;
+
+factory = DNotesFactory.getInstance();
+session = factory.getSession();
+database = session.getDatabase("", "log.nsf");
+</pre>
+<p>You don't have to recycle these objects as in the Notes API.
+Instead Domingo about recycling all objects properly.</p>
+
+<h3>How the Factory finds an implementation of the API</h3>
+<p>The following strategy is used to find the implementation of the API:</p>
+<ol>
+<li>At first the system property <code>de.bea.domingo.factory</code> is checked.
+If the property is available and contains non-empty string, it is interpreted
+as the name of the factory class of the implementation of the API.</li>
+<li>It is checked if the resource file
+<code>de/bea/domingo/domingo.properties</code> exists and contains a non-empty
+property named <code>de.bea.domingo.factory</code> to be used as the name of
+the factory class</li>
+<li>The default implementation is used with the factory class
+<code>de.jakop.lotus.domingo.proxy.NotesProxyFactory</code>.</li>
+</ol>
+
+</body>
+</html>

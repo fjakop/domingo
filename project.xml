@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * ========================================================================
+ * This file is part of Domingo
+ * an Open Source Java-API to Lotus Notes/Domino
+ * hosted at http://domingo.sourceforge.net
+ *
+ * Copyright (c) 2003-2007 Beck et al. projects GmbH Munich, Germany (http://www.bea.de)
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+ * ========================================================================
+-->
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="src/xsd/maven-project.xsd">
+  <pomVersion>3</pomVersion>
+  <id>domingo</id>
+  <name>domingo</name>
+  <groupId>domingo</groupId>
+  <currentVersion>1.5.1</currentVersion>
+  <organization>
+    <name>beck et al. projects GmbH</name>
+    <url>http://www.bea-projects.de/</url>
+    <logo>/images/bea-projects-logo.jpg</logo>
+  </organization>
+  <inceptionYear>2005</inceptionYear>
+  <package>de.bea.domingo</package>
+  <logo>/images/domingo-logo.gif</logo>
+  <description>Domingo offers a simple, consistent,
+    objects-oriented easy-to-use interface to the Lotus Notes/Domino
+    Java-API.</description>
+  <shortDescription>Domingo</shortDescription>
+  <url>http://domingo.sourceforge.net</url>
+  <issueTrackingUrl>https://sourceforge.net/tracker/?group_id=160629&amp;atid=816613</issueTrackingUrl>
+  <siteAddress>http://domingo.sourceforge.net</siteAddress>
+  <repository>
+    <connection>scm:cvs:pserver:anonymous@domingo.cvs.sourceforge.net:/cvsroot/domingo:domingo</connection>
+    <developerConnection>scm:cvs:ext:developername@domingo.cvs.sourceforge.net:/cvsroot/domingo:domingo</developerConnection>
+    <url>http://domingo.cvs.sourceforge.net/domingo/domingo/</url>
+  </repository>
+  <versions>
+    <version>
+      <id>1.0</id>
+      <name>1.0</name>
+      <tag>DOMINGO_1_0</tag>
+    </version>
+    <version>
+      <id>1.1</id>
+      <name>1.1</name>
+      <tag>DOMINGO_1_1</tag>
+    </version>
+    <version>
+      <id>1.2</id>
+      <name>1.2</name>
+      <tag>DOMINGO_1_2</tag>
+    </version>
+    <version>
+      <id>1.3</id>
+      <name>1.3</name>
+      <tag>DOMINGO_1_3</tag>
+    </version>
+    <version>
+      <id>1.4</id>
+      <name>1.4</name>
+      <tag>DOMINGO_1_4</tag>
+    </version>
+    <version>
+      <id>1.5</id>
+      <name>1.5</name>
+      <tag>DOMINGO_1_5</tag>
+    </version>
+    <version>
+      <id>1.5.1</id>
+      <name>1.5.1</name>
+      <tag>DOMINGO_1_5_1</tag>
+    </version>
+  </versions>
+  <branches>
+  </branches>
+  <mailingLists>
+    <mailingList>
+      <name>Domingo Users List</name>
+      <subscribe>mailto:domingo-user-subscribe@lists.sourceforge.net</subscribe>
+      <unsubscribe>mailto:domingo-user-unsubscribe@lists.sourceforge.net</unsubscribe>
+      <archive>http://sourceforge.net/mailarchive/forum.php?forum=domingo-user</archive>
+    </mailingList>
+    <mailingList>
+      <name>Domingo CVS List</name>
+      <subscribe>mailto:domingo-cvs-subscribe@lists.sourceforge.net</subscribe>
+      <unsubscribe>mailto:domingo-cvs-unsubscribe@lists.sourceforge.net</unsubscribe>
+      <archive>http://sourceforge.net/mailarchive/forum.php?forum=domingo-cvs</archive>
+    </mailingList>
+  </mailingLists>
+  <developers>
+    <developer>
+      <name>Kurt Riede</name>
+      <id>kriede</id>
+      <email>kriede@users.sourceforge.net</email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Project Admin</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <name>Marcus Adlwart</name>
+      <id>admac77</id>
+      <email>admac77@users.sourceforge.net</email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <name>Daniel Schwarz</name>
+      <id>daniel_schwarz</id>
+      <email>daniel_schwarz@users.sourceforge.net</email>
+      <organization></organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>-6</timezone>
+    </developer>
+    <developer>
+      <name>Dave Rowe</name>
+      <id>d-rizzle</id>
+      <email>d-rizzle@users.sourceforge.net</email>
+      <organization></organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>-6</timezone>
+    </developer>
+  </developers>
+  <contributors>
+    <contributor>
+      <name>Andreas Blasberg</name>
+      <email>ablasberg@users.sourceforge.net</email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+    <contributor>
+      <name>Alexander Eggert</name>
+      <email></email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Ancient Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+    <contributor>
+      <name>Thomas Schäfer</name>
+      <email>tom-schaefer@users.sourceforge.net</email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+    <contributor>
+      <name>Christian Rupprecht</name>
+      <email>christian.rupprecht at bea dot de</email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+    <contributor>
+      <name>Joachim Schmid</name>
+      <email>joachim.schmid at bea dot de</email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+    <contributor>
+      <name>Martin Sturzenhecker</name>
+      <email>msturzen@users.sourceforge.net</email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+    <contributor>
+      <name>Yvonne Sunke</name>
+      <email>yvonne.sunke at bea dot de</email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+    <contributor>
+      <name>Marcus Toennis</name>
+      <email></email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Ancient Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+    <contributor>
+      <name>Jürgen Trumpfheller</name>
+      <email>juergentr@users.sourceforge.net</email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+    <contributor>
+      <name>Christian Wied</name>
+      <email>cwied@users.sourceforge.net</email>
+      <organization>beck et al. projects GmbH</organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+1</timezone>
+    </contributor>
+  </contributors>
+  <licenses>
+  </licenses>
+  <dependencies>
+    <dependency>
+      <groupId>ibm.lotus</groupId>
+      <artifactId>Notes</artifactId>
+      <version>7.0.3</version>
+      <type>jar</type>
+      <url>http://www.ibm.com/developerworks/lotus/downloads/</url>
+    </dependency>
+    <dependency>
+      <groupId>ibm.lotus</groupId>
+      <artifactId>NCSO</artifactId>
+      <version>7.0.3</version>
+      <type>jar</type>
+      <url>http://www.ibm.com/developerworks/lotus/downloads/</url>
+    </dependency>
+    <dependency>
+      <groupId>ibm.lotus</groupId>
+      <artifactId>jsdk</artifactId>
+      <version>7.0.3</version>
+      <type>jar</type>
+      <url>http://www.ibm.com/developerworks/lotus/downloads/</url>
+    </dependency>
+    <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+      <version>3.0</version>
+      <url>http://jakarta.apache.org/commons/httpclient/</url>
+    </dependency>
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.3</version>
+      <url>http://jakarta.apache.org/commons/codec/</url>
+    </dependency>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.0.3</version>
+      <url>http://jakarta.apache.org/commons/logging/</url>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.8</version>
+      <type>jar</type>
+      <url>http://logging.apache.org/log4j/docs/</url>
+    </dependency>
+    <dependency>
+      <groupId>javax.j2ee</groupId>
+      <artifactId>j2ee</artifactId>
+      <version>1.3</version>
+      <url>http://java.sun.com/</url>
+    </dependency>
+    <dependency>
+      <groupId>maven-plugins</groupId>
+      <artifactId>maven-findbugs-plugin</artifactId>
+      <version>1.3.1</version>
+      <type>plugin</type>
+      <url>http://maven-plugins.sourceforge.net/maven-findbugs-plugin/</url>
+      <properties>
+        <comment>maven plugin for the findbug report</comment>
+      </properties>
+    </dependency>
+  </dependencies>
+  <build>
+    <nagEmailAddress>kriede@users.sourceforge.net</nagEmailAddress>
+    <sourceDirectory>src/main</sourceDirectory>
+    <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
+    <unitTest>
+      <includes>
+        <include>${basedir}/src/test/**/*Test.java</include>
+      </includes>
+      <excludes>
+        <exclude>${basedir}/src/test/**/All*.java</exclude>
+      </excludes>
+    </unitTest>
+    <resources>
+      <resource>
+        <directory>${basedir}/src/main</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+          <exclude>**/package.html</exclude>
+          <exclude>**/*.launch</exclude>
+        </excludes>
+      </resource>
+    </resources>
+  </build>
+  <reports>
+    <report>maven-changes-plugin</report>
+    <report>maven-changelog-plugin</report>
+    <report>maven-file-activity-plugin</report>
+    <report>maven-developer-activity-plugin</report>
+    <report>maven-javadoc-plugin</report>
+    <report>maven-checkstyle-plugin</report>
+    <report>maven-findbugs-plugin</report>
+    <report>maven-jxr-plugin</report>
+    <report>maven-jdepend-plugin</report>
+    <report>maven-license-plugin</report>
+    <report>maven-simian-plugin</report>
+    <report>maven-tasklist-plugin</report>
+    <report>maven-faq-plugin</report>
+    <report>maven-linkcheck-plugin</report>
+  </reports>
+  <properties>
+  </properties>
+</project>

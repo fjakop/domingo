@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Domingo - Mock objects</title>
+</head><body>
+<p>Implementations of some interfaces for temporary objects.
+These implementations are usefull for tests or if only a non-persistent
+instance implementation of an interface is needed, e.g. in adapters
+between two modules.</p>
+<p><b>ATTENTION:</b><br/>
+Not all methods of the temporary implementations can be used, e.g.
+<code>DDocument.getParentDatabase()</code> cannot return a
+<code>DDatabase</code>, because the temporary document is not persistent.
+Also maybe some other methods are note yet implemented because nobody
+needed them so far.
+</p>
+</body>
+</html>

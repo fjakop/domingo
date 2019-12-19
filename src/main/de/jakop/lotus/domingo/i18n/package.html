@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Domingo Internationalization</title>
+</head>
+<body>
+Resources supporting internationalization.
+
+<h2>Usage</h2>
+
+<p>Use the ResourceManager to get the Resources of a package.
+Use the Resource object to get translations for your messages.</p>
+
+<pre>
+<b><font color="7F0053">package</font></b> de.bea.mypackage;
+
+<b><font color="7F0053">import</font></b> ResourceManager;
+<b><font color="7F0053">import</font></b> Resources;
+
+<b><font color="7F0053">public final class</font></b> MyClass {
+
+    private static final Resources RESOURCES = ResourceManager.getPackageResources(MyClass.<b><font color="7F0053">class</font></b>);
+
+    <b><font color="7F0053">public void</font></b> mySimpleMethod() {
+        String mssage = RESOURCES.getString("my.message");
+    }
+
+    <b><font color="7F0053">public void</font></b> myOtherMethod() {
+        String mssage = RESOURCES.getString("MyClass.my.message");
+    }
+}
+</pre>
+
+
+<h3>The file de/bea/mypackage/Resources.properties</h3>
+<pre>
+my.message=This is my message in english
+MyClass.my.message=An example with class-related messages (helpfull if you have many messages in a package)
+</pre>
+
+<h3>The file de/bea/mypackage/Resources_de.properties</h3>
+<pre>
+my.message=Dies ist meine Nachricht auf deutsch
+MyClass.my.message=Ein Beispiel mit Klassenbezogenen Nachrichten (hilfreich, wenn in einem Package viele Nachrichten benutzt werden)
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+Go to C:\Program Files (x86)\IBM\Notes\jvm\lib\ext or whereever your Lotus Notes installation lives.
+
+Install Notes.jar in local repository:
+
+  mvn install:install-file -Dfile=Notes.jar -DgroupId=ibm.lotus -DartifactId=Notes -Dversion=9.0.1 -Dpackaging=jar
+
+Make sure that your local Lotus Notes installation directory is contained in PATH variable.
+
+Build Domingo
+
+  mvn clean install
+

@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Domingo Http Implementation</title>
+</head>
+<body>
+<p>Http implementation of the contract in package <code>de.bea.domingo</code>.</p>
+
+<p><b>Design goals</b><br/>
+The connection to a Lotus Domino server is established via Http using XML.
+The URL commands of Domino donot provide the full functionality of the
+Java-API, but whatever is possible should be as easy to use as with the
+proxy-implementation of Domingo. For each server, a client must establish
+a seperate session, because different servers might require different
+user credentials. Both, basic authentication and session-based authentication
+should be supported.</p>
+
+</body>
+</html>

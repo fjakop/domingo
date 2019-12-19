@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<document xmlns='http://www.lotus.com/dxl' version='6.5' maintenanceversion='1.0' replicaid='C1257268004F93E3' form='Memo'>
+<noteinfo noteid='90e' unid='5BCFCFB9B244FC67C12572680051C145' sequence='3'>
+<created><datetime>20070119T155258,93+01</datetime></created>
+<modified><datetime>20070206T011150,72+01</datetime></modified>
+<revised><datetime>20070206T011150,71+01</datetime></revised>
+<lastaccessed><datetime>20070206T011150,71+01</datetime></lastaccessed>
+<addedtofile><datetime>20070119T155308,96+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Administrator/O=Acme</name></updatedby>
+<revisions><datetime>20070119T155258,98+01</datetime><datetime>20070206T011147,17+01</datetime></revisions>
+<item name='Principal'><text>CN=Administrator/O=Acme</text></item>
+<item name='$langPrincipal'><text/></item>
+<item name='$altPrincipal'><text/></item>
+<item name='PostedDate'><text/></item>
+<item name='AbortGracefully'><text/></item>
+<item name='ReturnView'><text/></item>
+<item name='docID'><text/></item>
+<item name='pdocID'><text/></item>
+<item name='MIME_Version'><text>1.0</text></item>
+<item name='textApplet'><text>True</text></item>
+<item name='OriginalModTime'><datetime>20070119T155259,00+01</datetime></item>
+<item name='From' sign='true' authors='true' names='true'><text>kriede@acme</text></item>
+<item name='AltFrom'><text>CN=Kurt Riede/O=Acme</text></item>
+<item name='Logo'><text>stdNotesLtr0</text></item>
+<item name='useApplet'><text>True</text></item>
+<item name='DefaultMailSaveOptions'><text>0</text></item>
+<item name='Query_String'><text/></item>
+<item name='ExpandPersonalGroups'><text>1</text></item>
+<item name='tmpImp'><text/></item>
+<item name='Sign'><text/></item>
+<item name='Encrypt'><text/></item>
+<item name='SendTo' names='true'><text/></item>
+<item name='CopyTo' names='true'><text/></item>
+<item name='BlindCopyTo' names='true'><text/></item>
+<item name='Subject'><text>Domingo Test with XML over Http</text></item>
+<item name='Body' sign='true' seal='true'><richtext>
+<pardef id='1' leftmargin='1in' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
+<par def='1'/></richtext></item>
+<item name='wBody' sign='true' seal='true'><richtext>
+<pardef id='2' leftmargin='1in' hide='notes' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'><code
+ event='hidewhen'><formula>useApplet="True"</formula></code></pardef>
+<par def='2'/></richtext></item>
+<item name='EnterSendTo' names='true'><text/></item>
+<item name='EnterCopyTo' names='true'><text/></item>
+<item name='EnterBlindCopyTo' names='true'><text/></item></document>
+
