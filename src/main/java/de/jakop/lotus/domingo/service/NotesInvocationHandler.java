@@ -147,13 +147,13 @@ public final class NotesInvocationHandler implements InvocationHandler {
             return obj;
         } else if (obj instanceof DDateRange) {
             return obj;
-        } else if (obj.getClass().getPackage().getName().startsWith("de.bea.domingo")) {
+        } else if (obj.getClass().getPackage().getName().startsWith("de.jakop.lotus.domingo")) {
             return wrapObject(obj);
         } else if (obj instanceof List) {
             final List list = new ArrayList((List) obj);
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i) != null) {
-                    if (list.get(i).getClass().getPackage().getName().startsWith("de.bea.domingo")) {
+                    if (list.get(i).getClass().getPackage().getName().startsWith("de.jakop.lotus.domingo")) {
                         set(list, i);
                     }
                 }

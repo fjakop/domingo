@@ -45,7 +45,7 @@ public final class AllTests {
      * @return Test
      */
     public static Test suite() {
-        TestSuite suite = new TestSuite("All tests for package de.bea.domingo.proxy");
+        TestSuite suite = new TestSuite("All tests for package de.jakop.lotus.domingo.proxy");
         //$JUnit-BEGIN$
         suite.addTestSuite(SessionProxyTest.class);
         //$JUnit-END$

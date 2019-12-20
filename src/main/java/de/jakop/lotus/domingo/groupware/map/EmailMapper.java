@@ -23,11 +23,7 @@
 
 package de.jakop.lotus.domingo.groupware.map;
 
-import java.util.Calendar;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 import de.jakop.lotus.domingo.DDocument;
 import de.jakop.lotus.domingo.DViewEntry;
@@ -53,9 +49,9 @@ public final class EmailMapper extends BaseMapper {
 
     // TODO make column numbers configurable for better support of individualized mail templates
 
-    private static final int DEFAULT_SUBJECT_COLUMN = 11;
+    private static final int DEFAULT_SUBJECT_COLUMN = 6;
 
-    private static final int DEFAULT_TIME_COLUMN = 8;
+    private static final int DEFAULT_TIME_COLUMN = 7;
 
     private static final int DEFAULT_DATE_COLUMN = 7;
 
@@ -80,7 +76,7 @@ public final class EmailMapper extends BaseMapper {
         add(new DirectMapper("SendTo", "Recipients", List.class));
         add(new DirectMapper("CopyTo", "Cc", List.class));
         add(new DirectMapper("BlindCopyTo", "Bcc", List.class));
-        add(new DirectMapper("Categories", "Categories", Set.class));
+        add(new DirectMapper("Categories", "Categories", Collection.class));
         add(new DirectMapper("DeliveredDate", Calendar.class));
         add(new PriorityMapper());
         add(new ImportanceMapper());

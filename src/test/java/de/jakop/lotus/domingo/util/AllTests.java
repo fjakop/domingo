@@ -45,7 +45,7 @@ public final class AllTests {
      * @return Test
      */
     public static Test suite() {
-        TestSuite suite = new TestSuite("All tests for package de.bea.domingo.util");
+        TestSuite suite = new TestSuite("All tests for package de.jakop.lotus.domingo.util");
         //$JUnit-BEGIN$
         suite.addTestSuite(DateUtilTest.class);
         suite.addTestSuite(GregorianTest.class);

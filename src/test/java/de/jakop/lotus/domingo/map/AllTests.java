@@ -45,7 +45,7 @@ public final class AllTests {
      * @return Test
      */
     public static Test suite() {
-        TestSuite suite = new TestSuite("All tests for package de.bea.domingo.map");
+        TestSuite suite = new TestSuite("All tests for package de.jakop.lotus.domingo.map");
         //$JUnit-BEGIN$
         suite.addTestSuite(NotesLocationTest.class);
         suite.addTestSuite(DirectMapperTest.class);

@@ -1,12 +1,34 @@
-Go to C:\Program Files (x86)\IBM\Notes\jvm\lib\ext or whereever your Lotus Notes installation lives.
+= Domingo
 
-Install Notes.jar in local repository:
+Domingo is a simple, consistent, object-oriented easy-to-use interface to the Lotus Notes/Domino Java-API.
+
+The latest release 1.5.1 has been published on January 28, 2008.
+
+Unfortunately it was never published to Maven Central this is why this project exists.
+
+The original Domingo website is located at http://domingo.sourceforge.net/.
+
+== Version compatibility
+
+This project's aim is compatibility with Lotus Notes 9.x. Older versions are not necessarily supported.
+
+== Development
+
+=== Prerequisites
+
+Assumption is that your Lotus Notes Installation is located in NOTES_HOME, e.g. C:\Program Files (x86)\IBM\Notes.
+
+==== Install Notes.jar
+
+Go to $NOTES_HOME\jvm\lib\ext and install Notes.jar in local Maven repository (change version accordingly):
 
   mvn install:install-file -Dfile=Notes.jar -DgroupId=ibm.lotus -DartifactId=Notes -Dversion=9.0.1 -Dpackaging=jar
 
+==== Set PATH variable
+
 Make sure that your local Lotus Notes installation directory is contained in PATH variable.
 
-Build Domingo
+=== Build Domingo
 
   mvn clean install
 

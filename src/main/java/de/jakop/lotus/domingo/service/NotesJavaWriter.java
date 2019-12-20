@@ -62,7 +62,7 @@ public final class NotesJavaWriter {
     private static final String DEFAULT_JAVA_LOGFILE = ""; // "notes-java-calls.log";
 
     /** Name of property of java log file. */
-    public static final String JAVA_LOGFILE = "de.bea.domingo.java.logfile";
+    public static final String JAVA_LOGFILE = "de.jakop.lotus.domingo.java.logfile";
 
     /** Map from domingo types to corresponding Lotus types. */
     private static final Map TYPES = new HashMap();
@@ -91,7 +91,7 @@ public final class NotesJavaWriter {
     /**
      * Constructor.
      *
-     * <p>The <code>de.bea.domingo.java.logfile</code> property from the
+     * <p>The <code>de.jakop.lotus.domingo.java.logfile</code> property from the
      * resource file <code>de/bea/domingo/domingo.properties</code>
      * is used to determine the output file for java logging. If this
      * property is empty or not set, no output is generated.</p>

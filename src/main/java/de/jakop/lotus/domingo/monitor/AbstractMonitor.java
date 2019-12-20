@@ -81,7 +81,7 @@ public abstract class AbstractMonitor implements DNotesMonitor {
      * Constructor.
      */
     public AbstractMonitor() {
-        final String levelString = DNotesFactory.getProperty("de.bea.domingo.monitor.level", "INFO");
+        final String levelString = DNotesFactory.getProperty("de.jakop.lotus.domingo.monitor.level", "INFO");
         level = getLevel(levelString);
     }
 

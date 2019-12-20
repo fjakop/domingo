@@ -23,13 +23,13 @@
 
 package de.jakop.lotus.domingo;
 
+import de.jakop.lotus.domingo.util.GregorianDate;
+import de.jakop.lotus.domingo.util.GregorianDateTime;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
-
-import de.jakop.lotus.domingo.util.GregorianDate;
-import de.jakop.lotus.domingo.util.GregorianDateTime;
 
 /**
  * @author MarcusT
@@ -69,7 +69,6 @@ public final class ViewProxyTest extends BaseProxyTest {
     /**
      * Tests <code>getAllDocumentsByKey</code> for Lists. Tests both methods
      * with and without boolean parameter.
-     *
      */
     public void testGetAllDocumentsByKeyList() {
         System.out.println("-> testGetAllDocumentsByKeyList");
@@ -156,8 +155,8 @@ public final class ViewProxyTest extends BaseProxyTest {
         assertNotNull("The view should have a document with this key list.", doc1);
         String fieldDbName = doc1.getItemValueString("DbName");
         assertTrue(
-            "The Document should have a field 'DbName'.",
-            ("DbName1".equals(fieldDbName) || "DbName2".equals(fieldDbName)));
+                "The Document should have a field 'DbName'.",
+                ("DbName1".equals(fieldDbName) || "DbName2".equals(fieldDbName)));
     }
 
     /**
@@ -355,22 +354,24 @@ public final class ViewProxyTest extends BaseProxyTest {
         doc4.replaceItemValue("Server", "somePath");
         doc4.replaceItemValue("StartTime", correctNow);
         doc4.save();
-        newView = newDB.getView("Object Store Usage");
+        newView = newDB.getView(OBJECT_STORE_USAGE);
     }
 
     /**
      * {@inheritDoc}
+     *
      * @see BaseProxyTest#setUpTest()
      */
     protected void setUpTest() {
         correctNow = new GregorianDateTime();
-        viewName = "Miscellaneous Events";
+        viewName = MISCELLANEOUS_EVENTS;
         view = getDatabase().getView(viewName);
         createNewDBAndView("testViewProxy" + "_" + System.currentTimeMillis() + ".nsf");
     }
 
     /**
      * {@inheritDoc}
+     *
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception {

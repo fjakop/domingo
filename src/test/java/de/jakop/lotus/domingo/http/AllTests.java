@@ -45,7 +45,7 @@ public final class AllTests {
      * @return Test
      */
     public static Test suite() {
-        TestSuite suite = new TestSuite("All tests for package de.bea.domingo.http");
+        TestSuite suite = new TestSuite("All tests for package de.jakop.lotus.domingo.http");
         //$JUnit-BEGIN$
         suite.addTestSuite(DominoLocaleTest.class);
         //$JUnit-END$

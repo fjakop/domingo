@@ -313,7 +313,7 @@ public final class NotesServiceFactory extends DNotesFactory {
         if (threadPool != null) {
             return;
         }
-        final int threadPoolSize = getIntProperty("de.bea.domingo.threadpool.size", DEFAULT_THREADPOOL_SIZE);
+        final int threadPoolSize = getIntProperty("de.jakop.lotus.domingo.threadpool.size", DEFAULT_THREADPOOL_SIZE);
         threadFactory = new NotesThreadFactory();
         try {
             threadPool = new SimpleThreadPool(getMonitor(), threadFactory, threadPoolSize);

@@ -36,7 +36,16 @@ import java.util.ResourceBundle;
  */
 public abstract class BaseProxyTest extends TestCase {
 
-    private static ResourceBundle myResources = ResourceBundle.getBundle("de.bea.domingo.test");
+    //    static final String MISCELLANEOUS_EVENTS = "Miscellaneous Events";
+    static final String MISCELLANEOUS_EVENTS = "Verschiedene Ereignisse";
+    //   static final String OBJECT_STORE_USAGE = "Object Store Usage";
+    static final String OBJECT_STORE_USAGE = "Objektspeicherbenutzung";
+//    static final String DATABASE_SIZES = "Database\\Sizes";
+    static final String DATABASE_SIZES = "Datenbank\\Größe";
+    public static final String LOG_DATABASE = "log.nsf";
+
+
+    private static ResourceBundle myResources = ResourceBundle.getBundle("de.jakop.lotus.domingo.test");
 
     private static final String DOMINGO_IMPL = myResources.getString("test.impl");
     private static final String SERVER_NAME = myResources.getString("test.server");
@@ -64,15 +73,15 @@ public abstract class BaseProxyTest extends TestCase {
     protected final void setUp() throws DNotesException {
         ConsoleMonitor monitor = new ConsoleMonitor();
         factory = DNotesFactory.getInstance(DOMINGO_IMPL, monitor);
-        if (isAssignableFrom(factory, "de.bea.domingo.http.NotesHttpFactory")) {
+        if (isAssignableFrom(factory, "de.jakop.lotus.domingo.http.NotesHttpFactory")) {
             session = factory.getSession(SERVER_NAME, USERNAME, PASSWORD);
-            logDatabase = session.getDatabase("", "log.nsf");
+            logDatabase = session.getDatabase("", LOG_DATABASE);
         } else if (HOST_NAME != null && HOST_NAME.length() > 0) {
             session = factory.getSession(HOST_NAME, USERNAME, PASSWORD);
-            logDatabase = session.getDatabase("", "log.nsf");
+            logDatabase = session.getDatabase("", LOG_DATABASE);
         } else {
             session = factory.getSession();
-            logDatabase = session.getDatabase(serverName, "log.nsf");
+            logDatabase = session.getDatabase(serverName, LOG_DATABASE);
         }
         setUpTest();
     }

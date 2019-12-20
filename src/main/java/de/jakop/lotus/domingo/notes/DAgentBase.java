@@ -81,7 +81,7 @@ public abstract class DAgentBase extends AgentBase {
         DNotesFactory factory = null;
         try {
             monitor = new NotesAgentMonitor(AbstractMonitor.WARN);
-            factory = DNotesFactory.newInstance("de.bea.domingo.proxy.NotesProxyFactory", monitor);
+            factory = DNotesFactory.newInstance("de.jakop.lotus.domingo.proxy.NotesProxyFactory", monitor);
             session = factory.getSession(super.getSession());
         } catch (Exception e) {
             getMonitor().fatalError(RESOURCES.getString("agent.init.failed"), e);

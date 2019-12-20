@@ -127,10 +127,9 @@ public final class DatabaseProxyTest extends BaseProxyTest {
 
         assertTrue("Databases name does not match.", newDB.getFilePath().endsWith(newName));
 
-        String viewName = "Database\\Sizes";
-        DView view = newDB.getView(viewName);
+        DView view = newDB.getView(DATABASE_SIZES);
         assertNotNull("The received view should not be NULL.", view);
-        assertEquals("The views name does not match.", viewName, view.getName());
+        assertEquals("The views name does not match.", DATABASE_SIZES, view.getName());
 
         DDatabase newDB2 = null;
         try {
@@ -235,7 +234,7 @@ public final class DatabaseProxyTest extends BaseProxyTest {
      */
     public void testGetView() {
         System.out.println("-> testGetView");
-        String viewName = "Database\\Sizes";
+        String viewName = DATABASE_SIZES;
         DView view = getDatabase().getView(viewName);
         assertTrue(
             "Each Notes log DB (log.nsf) should have a view '" + viewName + ", but this DB has not: " + view,

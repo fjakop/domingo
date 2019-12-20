@@ -45,7 +45,7 @@ public final class AllTests {
      * @return Test
      */
     public static Test suite() {
-        TestSuite suite = new TestSuite("All tests for package de.bea.domingo.groupware.map");
+        TestSuite suite = new TestSuite("All tests for package de.jakop.lotus.domingo.groupware.map");
         //$JUnit-BEGIN$
         suite.addTestSuite(CalendarEntryMapperTest.class);
         suite.addTestSuite(EmailMapperTest.class);

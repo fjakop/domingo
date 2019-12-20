@@ -660,7 +660,7 @@ public abstract class BaseProxy extends AbstractMonitorEnabled implements DBase 
     /**
      * Returns a message for a domino exception.
      * @param message a message string
-     * @param a @link{de.bea.domingo.proxy.DominoException DominoException}
+     * @param a @link{de.jakop.lotus.domingo.proxy.DominoException DominoException}
      * @return combined full message
      */
     private String getFullMessage(final String message, final Exception d) {

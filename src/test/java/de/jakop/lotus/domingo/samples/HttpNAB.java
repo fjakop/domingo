@@ -48,7 +48,7 @@ public final class HttpNAB {
     public static void main(String[] args) throws DNotesException {
 
         // get an instance of the domingo factory
-        DNotesFactory factory = DNotesFactory.getInstance("de.bea.domingo.http.NotesHttpFactory");
+        DNotesFactory factory = DNotesFactory.getInstance("de.jakop.lotus.domingo.http.NotesHttpFactory");
 
         // create a Http session to a Lotus Domino server
         DSession session = factory.getSession("http://plato.acme", "Administrator", "password");

@@ -513,6 +513,16 @@ public final class Email extends BaseInstance {
     }
 
     /**
+     * Sets the set of categories.
+     *
+     * @param categories the categories to set
+     */
+    public void setCategories(final Collection categories) {
+        fCategories = new HashSet();
+        fCategories.addAll(categories);
+    }
+
+    /**
      * Returns an iterator over all categories.
      *
      * @return iterator over all categories.

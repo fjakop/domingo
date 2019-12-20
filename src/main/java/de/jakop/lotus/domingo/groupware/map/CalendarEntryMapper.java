@@ -51,7 +51,7 @@ public final class CalendarEntryMapper extends BaseMapper {
 
     private static final int CHAIR_COLUMN = 11;
 
-    private static final int INFO_COLUMN = 12;
+    private static final int INFO_COLUMN = 13;
 
     private static final int START_DATE_TIME_COLUMN = 8;
 

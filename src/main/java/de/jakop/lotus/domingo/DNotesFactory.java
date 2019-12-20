@@ -67,7 +67,7 @@ public abstract class DNotesFactory {
      * <p>This method uses the following ordered lookup procedure to determine
      * the <code>DNotesFactory</code> implementation class to load:
      * <ul>
-     * <li>Use the <code>de.bea.domingo.factory</code> system property.</li>
+     * <li>Use the <code>de.jakop.lotus.domingo.factory</code> system property.</li>
      * <li>Use the resource file <code>de/bea/domingo/domingo.properties</code>
      * This configuration file must be in standard
      * <code>java.util.Properties</code> format and contains the fully qualified
@@ -121,7 +121,7 @@ public abstract class DNotesFactory {
      * <p>This method uses the following ordered lookup procedure to determine
      * the <code>DNotesFactory</code> implementation class to load:
      * <ul>
-     * <li>Use the <code>de.bea.domingo.factory</code> system property.</li>
+     * <li>Use the <code>de.jakop.lotus.domingo.factory</code> system property.</li>
      * <li>Use the resource file de/bea/domingo/domingo.properties
      * This configuration file must be in standard
      * <code>java.util.Properties</code> format and contains the fully qualified

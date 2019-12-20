@@ -108,7 +108,7 @@ public final class NotesProxyFactory extends DNotesFactory implements MonitorEna
      */
     public NotesProxyFactory() {
         setMonitor(NullMonitor.getInstance());
-        fCacheThreshold = DNotesFactory.getIntProperty("de.bea.domingo.cache.threshold", DEFAULT_CACHE_THRESHOLD);
+        fCacheThreshold = DNotesFactory.getIntProperty("de.jakop.lotus.domingo.cache.threshold", DEFAULT_CACHE_THRESHOLD);
     }
 
     /**
@@ -587,7 +587,7 @@ public final class NotesProxyFactory extends DNotesFactory implements MonitorEna
      * on termination of the virtual machine.
      */
     private void handleShutdownHook() {
-        final boolean shutdownhook = DNotesFactory.getBooleanProperty("de.bea.domingo.shutdownhook", true);
+        final boolean shutdownhook = DNotesFactory.getBooleanProperty("de.jakop.lotus.domingo.shutdownhook", true);
         if (shutdownhook) {
             if (checkPermission("shutdownHooks")) {
                 Runtime.getRuntime().addShutdownHook(new DNotesShutdownThread());

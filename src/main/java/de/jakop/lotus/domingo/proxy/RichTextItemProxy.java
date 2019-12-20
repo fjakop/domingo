@@ -217,7 +217,7 @@ public final class RichTextItemProxy extends BaseItemProxy implements DRichTextI
      * A <code>EmbeddedObjectsIterator</code> allows iteration over a set of
      * <code>lotus.domino.EmbeddedObject</code>.
      *
-     * #see de.bea.domingo.DEmbeddedObject
+     * #see de.jakop.lotus.domingo.DEmbeddedObject
      *
      * @author <a href=mailto:kriede@users.sourceforge.net>Kurt Riede</a>
      */

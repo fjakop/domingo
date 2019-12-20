@@ -139,7 +139,7 @@ public final class Groupware {
      */
     public Mailbox getMailbox() throws GroupwareException {
         if (fMailDatabase == null) {
-            String username = fSession.getCommonUserName();
+            String username = fSession.getCanonicalUserName();
             String server = fSession.getMailServer();
             String path = fSession.getMailDatabaseName();
             NotesLocation mailLocation = NotesLocation.getInstance(fLocation, server, path);
@@ -268,7 +268,7 @@ public final class Groupware {
         final String user = location.getUsername();
         final String passwd = location.getPassword();
         if (location.isHttp()) {
-            final DNotesFactory factory = DNotesFactory.newInstance("de.bea.domingo.http.NotesHttpFactory", monitor);
+            final DNotesFactory factory = DNotesFactory.newInstance("de.jakop.lotus.domingo.http.NotesHttpFactory", monitor);
             return factory.getSession(host, user, passwd);
         } else if (location.isIIOP()) {
             final DNotesFactory factory = DNotesFactory.newInstance(monitor);

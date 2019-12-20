@@ -46,7 +46,7 @@ public final class AllTests {
      * @return Test
      */
     public static Test suite() {
-        TestSuite suite = new TestSuite("All tests for package de.bea.domingo.groupware");
+        TestSuite suite = new TestSuite("All tests for package de.jakop.lotus.domingo.groupware");
         //$JUnit-BEGIN$
         suite.addTestSuite(EmailTest.class);
         //$JUnit-END$

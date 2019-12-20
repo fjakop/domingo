@@ -51,7 +51,7 @@ public final class HttpMail {
         monitor.setLevel(AbstractMonitor.DEBUG);
 
         // get an instance of the domingo factory
-        DNotesFactory factory = DNotesFactory.getInstance("de.bea.domingo.http.NotesHttpFactory", monitor);
+        DNotesFactory factory = DNotesFactory.getInstance("de.jakop.lotus.domingo.http.NotesHttpFactory", monitor);
 
         // create a Http session to the Lotus Domino server
         DSession session = factory.getSession("http://plato.acme", "kriede", "password");

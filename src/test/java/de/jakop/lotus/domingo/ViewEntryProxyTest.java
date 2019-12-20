@@ -199,6 +199,6 @@ public final class ViewEntryProxyTest extends BaseProxyTest {
         doc4.replaceItemValue("Server", "somePath");
         doc4.replaceItemValue("StartTime", correctNow);
         doc4.save();
-        newView = newDB.getView("Object Store Usage");
+        newView = newDB.getView(OBJECT_STORE_USAGE);
     }
 }

@@ -214,7 +214,7 @@ public final class RichTextItemProxyTest extends BaseItemProxyTest {
      * @return a very long string
      */
     private String getBigText() {
-        ResourceBundle bundle = ResourceBundle.getBundle("de.bea.domingo.test-values");
+        ResourceBundle bundle = ResourceBundle.getBundle("de.jakop.lotus.domingo.test-values");
         return bundle.getString("value.string.long");
     }
 }

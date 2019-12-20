@@ -23,7 +23,9 @@
 
 package de.jakop.lotus.domingo.util;
 
+import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 import junit.framework.TestCase;
 
@@ -41,7 +43,7 @@ public final class DateUtilTest extends TestCase {
     /** A gregorian test date/time. */
     private final Calendar gregorianDateTime = new GregorianDateTime(2007, Calendar.DECEMBER, 31, 23, 59, 58);
 
-    /** String format of {@link #gregorianDateGREGORIAN_DATE}. */
+    /** String format of {@link #gregorianDate}. */
     private  static final String SAMPLE_DATE_STRING = "2007-12-31";
 
     /** String format of {@link #gregorianTime}. */

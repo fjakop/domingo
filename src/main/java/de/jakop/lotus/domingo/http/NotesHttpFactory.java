@@ -83,7 +83,7 @@ public final class NotesHttpFactory extends DNotesFactory implements MonitorEnab
      * an instance of this class.</p>
      */
     public NotesHttpFactory() {
-        String property = getProperty("de.bea.domingo.http.database", DEFAULT_DOMINGO_DATABASE);
+        String property = getProperty("de.jakop.lotus.domingo.http.database", DEFAULT_DOMINGO_DATABASE);
         if (property == null || property.length() == 0) {
             fDomingoDatabase = DEFAULT_DOMINGO_DATABASE;
         } else {

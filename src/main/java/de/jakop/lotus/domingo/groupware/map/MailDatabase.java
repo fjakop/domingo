@@ -186,7 +186,7 @@ public final class MailDatabase extends BaseDatabase implements Mailbox, Calenda
 //    /**
 //     * {@inheritDoc}
 //     *
-//     * @see de.bea.domingo.groupware.MailboxInterface#getNewMails(java.util.Calendar)
+//     * @see de.jakop.lotus.domingo.groupware.MailboxInterface#getNewMails(java.util.Calendar)
 //     */
 //    public List getNewMails(final Calendar since) {
 //        return null; // TODO

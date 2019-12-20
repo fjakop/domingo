@@ -36,10 +36,10 @@ import java.util.Properties;
 final class DNotesFactoryFinder {
 
     /** name of factory property, used with system properties and resource. */
-    private static final String FACTORY_PROPERTY = "de.bea.domingo.factory";
+    private static final String FACTORY_PROPERTY = "de.jakop.lotus.domingo.factory";
 
     /** Class name of default implementation of this abstract factory. */
-    private static final String DEFAULT_IMPL = "de.bea.domingo.service.NotesServiceFactory";
+    private static final String DEFAULT_IMPL = "de.jakop.lotus.domingo.service.NotesServiceFactory";
 
     /** name of resource file defining implementation. */
     private static final String PROPERTIES_FILE = "de/bea/domingo/domingo.properties";
