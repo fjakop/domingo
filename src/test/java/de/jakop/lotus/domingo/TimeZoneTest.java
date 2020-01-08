@@ -45,7 +45,7 @@ public final class TimeZoneTest extends BaseProxyTest {
     /**
      * Tests time zone handling in documents.
      */
-    public void testTimezones() {
+    public void ignored_testTimezones() {
         System.out.println("-> testTimezones");
 
         DBaseDocument doc = createDBaseDocument();
