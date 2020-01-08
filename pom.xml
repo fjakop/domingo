@@ -5,7 +5,7 @@
 
     <groupId>de.jakop.lotus</groupId>
     <artifactId>domingo</artifactId>
-    <version>1.5.2-SNAPSHOT</version>
+    <version>1.5.2</version>
 
     <name>Domingo</name>
     <description>Domingo offers a simple, consistent, objects-oriented easy-to-use interface to the Lotus Notes/Domino
